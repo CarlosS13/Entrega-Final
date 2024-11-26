@@ -81,6 +81,7 @@ main .containerText{
 .containerAgenda div form input{
     width: 50%;
     margin: 5px;
+    border-radius: 10px;
 }
 
 .containerAgenda div form .sendBotton{
@@ -90,6 +91,29 @@ main .containerText{
 .containerAgenda p{
     padding: 2% 10% 10% 10%;
 }
+
+/* Cortes.html */
+
+.containerCortes{
+    padding: 0 5% 10% 5%;
+}
+
+.containerCortes p{
+    text-align: center;
+    padding: 0 0% 5% 0%;
+}
+
+main .containerEj {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+}
+
+.containerCortes .containerEj div img{
+    border-radius: 50px;
+}
+
 
 /* Footer */
 
@@ -159,7 +183,19 @@ footer nav ul li img{
         font-size: medium;
         padding-bottom: 15px;
     }
+    /* Agenda.html */
 
+    .containerAgenda h1{
+        font-size: xx-large;
+    }
+
+    .containerAgenda iframe{
+        height: 450px;
+    }
+    
+    .containerAgenda p{
+        font-size: large;
+    }
 }
 
 /* Estilo de PC */
@@ -205,5 +241,23 @@ footer nav ul li img{
     footer nav ul li img{
         width: 5%;
     }
+    /* Agenda.html */
 
+    .containerAgenda iframe{
+        width: 70%;
+    }
+
+    .containerAgenda div form input{
+        width: 20%;
+    }
+
+    .containerAgenda div form .sendBotton{
+        width: 10%;
+    }
+    
+    /* Cortes.html */
+
+    main .containerEj {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
