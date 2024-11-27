@@ -32,28 +32,33 @@
           </div>
      </nav>
      <!-- Reseñas de otros clientes y formulario para agregar una nueva -->
-    <main>
+    <main class="containerSugerencias">
         <h1>Reseñas y calificacion</h1>
         <p>Esperamos que si ya has utilizado nuestros servicios, te hayas sentido super comodo con las instalaciones y profesionales, y que tu corte haya quedado aun mejor de lo imaginado. Si todavia no has pasado por el local, te dejamos algunas de las reseñas de los ultimos clientes para demostrar que su experiencia nos respalda y nos enorgullece de nuestro trabajo. Mas abajo te invitamos a completar el formulario dejando una breve reseña de tu experiencia y poniendo una calificacion de la atencion recibida.</p>
         <!-- Colocar reseñas anteriores para que el usuario las pueda visualizar (Todavia no se como hacerlo) -->
          <form action="" method="post">
-            <label for="reseña">Reseña:</label>
-            <textarea name="reseña" id="reseña"></textarea>
-
-            <label for="puntaje">Puntaje:</label>
-            <select name="" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
-            </select>
-            <input type="submit" value="Enviar">
+            <div>
+               <label for="reseña">Reseña:</label>
+               <textarea name="reseña" id="reseña"></textarea>
+            </div>
+            <div>
+               <label for="puntaje">Puntaje:</label>
+                  <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+                  </select>
+            </div>
+            <div>
+               <input type="submit" value="Enviar">
+            </div>
          </form>
     </main>
      <!-- Link de redes sociales y copyright -->

@@ -114,6 +114,80 @@ main .containerEj {
     border-radius: 50px;
 }
 
+/* Ubicacion.html */
+
+.containerUbicacion{
+    text-align: center;
+}
+
+.containerUbicacion nav iframe{
+    width: 90%;
+    height: 400px;
+}
+
+.containerUbicacion nav p{
+    padding: 3% 5% 5% 5%;
+}
+
+.containerUbicacion h2{
+    font-size: large;
+    padding: 0 20px 20px 20px;
+}
+
+.containerUbicacion .fotosUbicacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 30px;
+}
+.containerUbicacion nav nav img{
+    width: 100%;
+}
+
+/* Sugerencias.html */
+
+.containerSugerencias {
+    text-align: center;
+}
+
+.containerSugerencias h1{
+    padding-bottom: 20px;
+}
+
+.containerSugerencias p{
+    padding: 0 5% 5% 5%;
+}
+
+.containerSugerencias form{
+    padding-bottom: 95px;
+}
+
+.containerSugerencias form div{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    gap: 8px;
+}
+
+.containerSugerencias form div textarea{
+    resize: none;
+    width: 200px;
+    height: 70px;
+}
+
+.containerSugerencias form div select{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.containerSugerencias form div input{
+    width: 70px;
+    border-radius: 15px;
+}
+
 
 /* Footer */
 
@@ -196,6 +270,37 @@ footer nav ul li img{
     .containerAgenda p{
         font-size: large;
     }
+
+    /* Ubicacion.html */
+    
+    .containerUbicacion .fotosUbicacion{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+        padding: 0 10px 30px 10px;
+    }
+
+    /* Sugerencias.html */
+
+    .containerSugerencias form div{
+        padding: 20px;
+    }
+
+    .containerSugerencias form div textarea{
+        width: 400px;
+        height: 120px;
+    }
+
+    .containerSugerencias form div select{
+        width: 80px;
+        height: 30px;
+    }
+
+    .containerSugerencias form div input{
+        width: 90px;
+        height: 30px;
+    }
+
 }
 
 /* Estilo de PC */
@@ -260,4 +365,66 @@ footer nav ul li img{
     main .containerEj {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* Ubicacion.html */
+
+    .containerUbicacion {
+        padding-top: 0;
+    }
+
+    .containerUbicacion h1{
+        font-size: x-large;
+        padding-bottom: 30px;
+    }
+
+    .containerUbicacion .containerMapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerUbicacion .containerMapa iframe{
+        width: 45%;
+    }
+
+    .containerUbicacion .containerMapa p{
+        width: 40%;
+    }
+
+    .containerUbicacion h2{
+        padding-top: 40px;
+    }
+
+    .containerUbicacion .fotosUbicacion{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .containerUbicacion .fotosUbicacion .imgOne{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .containerUbicacion .fotosUbicacion .imgTwo{
+        grid-column-start: -5;
+        grid-column-end: -3;
+    }
+
+    .containerUbicacion .fotosUbicacion .imgThree{
+        grid-column-start: -3;
+        grid-column-end: -1;
+    }
+
+    /* Sugerencias.html */
+
+    .containerSugerencias p{
+        padding: 0 300px 0 300px;
+    }
+
+    .containerSugerencias form{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 140px;
+    }
+
 }
