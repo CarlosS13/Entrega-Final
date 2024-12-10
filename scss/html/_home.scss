@@ -1,0 +1,227 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Mobile first 
+   Index.html  */
+
+/* Header */
+
+nav{
+    ul{
+        font-family: fantasy;
+        li{
+            a{
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* Main */
+
+main {
+    padding-top: 10px;
+    background-color: $tertiaryColor;
+
+    h1{
+        font-size: x-large;
+        text-align: center;
+    }
+
+    div{
+        img{
+            width: 100%;
+        }
+    }
+
+    .containerText{
+        margin: 3% 10% 10% 10%;
+        text-align: center;
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* agenda.html Main */
+
+.containerAgenda {
+    text-align: center;
+
+    h1{
+        font-size: large;
+        padding-bottom: 10px;
+    }
+
+    iframe{
+        @include widht-height(90%, 350px);
+    }
+
+    div{
+        padding-top: 10px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input{
+                width: 50%;
+                margin: 5px;
+                border-radius: 10px;
+            }
+
+            .sendBotton{
+                width: 20%;
+            }
+        }
+    }
+
+    p{
+        padding: 0% 10% 0% 10%;
+    }
+
+    .firstP{
+        padding-top: 10%;
+    }
+
+    .lastP{
+        padding-bottom: 10%;
+    }
+}
+
+/* Cortes.html */
+
+.containerCortes {
+    padding: 0 5% 10% 5%;
+
+    p{
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .containerEj{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        div{
+            img{
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+/* Ubicacion.html */
+
+.containerUbicacion {
+    text-align: center;
+
+    nav{
+        iframe{
+            @include widht-height(90%, 400px);
+        }
+
+        p{
+            padding: 3% 5% 5% 5%;
+        }
+
+        nav{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    h2{
+        font-size: large;
+        padding: 0 20px 20px 20px;
+    }
+
+    .fotosUbicacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 30px;
+        gap: 5px;
+    }
+}
+
+/* Sugerencias.html */
+
+.containerSugerencias{
+    text-align: center;
+
+    h1{
+        padding-bottom: 20xp;
+    }
+
+    p{
+        padding: 0 5% 5% 5%;
+    }
+
+    form{
+        padding-bottom: 95px;
+
+        div{
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $fontPrimary;
+            gap: 8px;
+
+            textarea{
+                resize: none;
+                @include widht-height(200px, 70px);
+            }
+
+            select{
+                @include widht-height(50px, 25px);
+                text-align: center;
+            }
+
+            input{
+                width: 70px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    font-family: $fontPrimary;
+    background-color: $primaryColor;
+
+    nav{
+        padding-bottom: 10px;
+
+        ul{
+            display: flex;
+            font-size: small;
+            list-style: none;
+            padding-left: 0px;
+
+            li{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                img{
+                    width: 15%;
+                }
+            }
+        }
+    }
+}

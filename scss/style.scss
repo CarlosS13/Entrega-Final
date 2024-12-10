@@ -1,0 +1,10 @@
+// Import de utilidades
+@import "utilidades/variables";
+// Import de Mixin
+@import "utilidades/mixin";
+// Import del Reset
+@import "html/reset";
+// Import Home (Header, main y footer)
+@import "html/home";
+// Import Media-query para tablet y pc
+@import "utilidades/mq";

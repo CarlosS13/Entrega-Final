@@ -1,0 +1,272 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Estilo de tablet */
+
+@include media-query("tablet"){
+    .navbar{
+        div{
+            div{
+                ul{
+                    li{
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+    }
+
+
+    main{
+        h1{
+            font-size: xx-large;
+            padding-bottom: 10px;
+        }
+
+        .containerText{
+            font-size: large;
+        }
+    }
+
+    footer{
+        nav{
+            padding-bottom: 15px;
+
+            ul{
+                li{
+                    justify-content: center;
+                    font-size: medium;
+                    gap: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        p{
+            font-size: medium;
+            padding-bottom: 15px;
+        }
+    }
+
+    /* Agenda.html */
+
+    .containerAgenda{
+
+        h1{
+            font-size: xx-large;
+        }
+
+        iframe{
+            height: 450px;
+        }
+
+        p{
+            font-size: large;
+        }
+
+        .firstP{
+            padding-top: 6%;
+        }
+
+        .lastP{
+            padding-bottom: 6%;
+        }
+    }
+
+    /* Ubicacion.html */
+    
+        .containerUbicacion .fotosUbicacion{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            gap: 10px;
+            padding: 0 10px 30px 10px;
+        }
+
+    /* Sugerencias.html */
+
+    .containerSugerencias{
+        form{
+            div{
+                padding: 20px;
+
+                textarea{
+                    @include widht-height(400px, 120px);
+                }
+
+                select{
+                    @include widht-height(80px, 30px);
+                }
+
+                input{
+                    @include widht-height(90px, 30px);
+                }
+            }
+        }
+    }
+}
+
+/* Estilo de PC */
+
+@include media-query("pc"){
+
+    .navbar{
+        padding: 0 10% 0 10%;
+        
+        div{
+            a{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+
+        div{
+            ul{
+                li{
+                    a{
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        h1{
+            font-size: 35px;
+        }
+    }
+
+    footer{
+        display: flex;
+        padding: 0 10px 0 10px;
+
+        nav{
+            width: 50%;
+
+            ul{
+                flex-direction: column;
+                gap: 4px;
+
+                li{
+                    justify-content: start;
+
+                    img{
+                        width: 5%;
+                    }
+                }
+            }
+        }
+
+        p{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+    }
+
+    /* Agenda.html */
+
+    .containerAgenda{
+
+        iframe{
+            width: 70%;
+        }
+
+        div{
+            form{
+                input{
+                    width: 20%;
+                }
+
+                .sendBotton{
+                    width: 10%;
+                }
+            }
+        }
+    }
+
+    /* Cortes.html */
+
+    .containerCortes{
+        .containerEj {
+        grid-template-columns: repeat(3, 1fr);
+
+        div:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        }
+    }
+
+    /* Ubicacion.html */
+
+    .containerUbicacion{
+        padding-top: 0;
+
+        h1{
+            font-size: x-large;
+            padding-bottom: 30px;
+        }
+
+        h2{
+            padding-top: 40px;
+        }
+
+        .containerMapa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            iframe{
+                width: 45%;
+            }
+
+            p{
+                width: 40%;
+            }
+        }
+
+        .fotosUbicacion{
+            grid-template-columns: repeat(4, 1fr) ;
+            grid-template-rows: repeat(2, 1fr);
+
+            nav:hover{
+                transform: scale(1.1);
+                transition: 1.5s;
+            }
+
+            .imgOne{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+            .imgTwo{
+                grid-column-start: -5;
+                grid-column-end: -3;
+            }
+
+            .imgThree{
+                grid-column-start: -3;
+                grid-column-end: -1;
+            }
+        }
+    }
+
+    /* Sugerencias.html */
+
+    .containerSugerencias{
+
+        p{
+            padding: 0 300px 0 300px;
+        }
+        
+        form{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 140px;
+        }
+    }
+}
+

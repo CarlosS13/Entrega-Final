@@ -1,0 +1,14 @@
+//Mixin para media-query
+@mixin media-query($size) {
+    @if $size == "tablet" {
+        @media screen and (min-width: 600px) { @content; }
+    }
+    @else if $size == "pc" {
+        @media screen and (min-width: 1024px) { @content; }
+    }
+}
+//Media para widht-height
+@mixin widht-height($width, $height){
+    width: $width;
+    height: $height;
+}
