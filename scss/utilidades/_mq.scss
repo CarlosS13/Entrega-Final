@@ -19,8 +19,14 @@
 
     main{
         h1{
-            font-size: xx-large;
+            font-size: 28px;
             padding-bottom: 10px;
+        }
+
+        .containerDivision{
+            .divisionLine{
+                margin: 40px;
+            }
         }
 
         .containerText{
@@ -53,7 +59,7 @@
     .containerAgenda{
 
         h1{
-            font-size: xx-large;
+            font-size: 28px;
         }
 
         iframe{
@@ -73,18 +79,42 @@
         }
     }
 
+    /* Cortes */
+
+    .containerCortes{
+        h1{
+            font-size: 28px;
+        }
+    }
+
     /* Ubicacion.html */
     
-        .containerUbicacion .fotosUbicacion{
+    .containerUbicacion {
+
+        h1{
+            font-size: 28px;
+        }
+
+        h2{
+            font-family: $fontPrimary;
+        }
+
+        .fotosUbicacion{
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
             gap: 10px;
             padding: 0 10px 30px 10px;
         }
+    }
 
     /* Sugerencias.html */
 
     .containerSugerencias{
+
+        h1{
+            font-size: 28px;
+        }
+
         form{
             div{
                 padding: 20px;
@@ -115,7 +145,7 @@
         div{
             a{
                 img{
-                    width: 250px;
+                    width: 200px;
                 }
             }
         }
@@ -132,9 +162,33 @@
     }
 
     main{
+        padding: 30px 0 20px 0;
+
         h1{
-            font-size: 35px;
+            font-size: 28px;
         }
+
+        .containerImg{
+            background-image: url(#{$backgroundImg});
+            display: grid;
+            justify-content: center;
+
+            img{
+                box-shadow: -50px 0px 50px 0px rgba(0, 0, 0, 0.3), 50px 0px 50px 0px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .containerDivision{
+            .flecha{
+               width: 3%;
+               padding-top: 6px;
+            }
+
+            .divisionLine{
+                margin: 27px;
+            }
+        }
+
     }
 
     footer{
@@ -174,6 +228,10 @@
             width: 70%;
         }
 
+        .firstP{
+            padding-top: 50px;
+        }
+
         div{
             form{
                 input{
@@ -190,6 +248,7 @@
     /* Cortes.html */
 
     .containerCortes{
+        padding-top: 30px;
         .containerEj {
         grid-template-columns: repeat(3, 1fr);
 
@@ -203,10 +262,10 @@
     /* Ubicacion.html */
 
     .containerUbicacion{
-        padding-top: 0;
+        padding-top: 30px;
 
         h1{
-            font-size: x-large;
+            font-size: 28px;
             padding-bottom: 30px;
         }
 
@@ -257,9 +316,10 @@
     /* Sugerencias.html */
 
     .containerSugerencias{
+        padding-bottom: 130px;
 
         p{
-            padding: 0 300px 0 300px;
+            padding: 25px 300px 40px 300px;
         }
         
         form{

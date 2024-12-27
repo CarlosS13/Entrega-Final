@@ -6,14 +6,28 @@
 
 /* Header */
 
-nav{
-    ul{
-        font-family: fantasy;
-        li{
-            a{
-                text-align: center;
+.navbar{
+    background-color: $header-color;
+    margin-bottom: 1px;
+    div{
+        div{
+            ul{
+                font-family: $fontPrimary;
+                
+                li{
+                    .list-color{
+                        text-align: center;
+                        color: $tertiaryColor;
+                    }
+
+                    .list-color:hover{
+                        color: $secondaryColor;
+                        transition: all 0.4s;
+                    }
+                }
             }
         }
+
     }
 }
 
@@ -21,11 +35,13 @@ nav{
 
 main {
     padding-top: 10px;
-    background-color: $tertiaryColor;
+    background-color: $primaryColor;
 
     h1{
         font-size: x-large;
         text-align: center;
+        color: $tertiaryColor;
+        font-family: $fontPrimary;
     }
 
     div{
@@ -34,12 +50,28 @@ main {
         }
     }
 
+    .containerDivision{
+        display: flex;
+        justify-content: center;
+
+        .divisionLine{
+            border-bottom: 1px solid $tertiaryColor;
+            margin: 19px;
+            width: 30%;
+        }
+
+        .flecha{
+            width: 10%;
+        }
+    }
+
     .containerText{
-        margin: 3% 10% 10% 10%;
+        padding: 3% 10% 10% 10%;
         text-align: center;
 
         p{
             margin-bottom: 0;
+            color: $tertiaryColor;
         }
     }
 }
@@ -48,6 +80,7 @@ main {
 
 .containerAgenda {
     text-align: center;
+    color: $tertiaryColor;
 
     h1{
         font-size: large;
@@ -80,6 +113,7 @@ main {
 
     p{
         padding: 0% 10% 0% 10%;
+        margin-bottom: 0;
     }
 
     .firstP{
@@ -94,7 +128,13 @@ main {
 /* Cortes.html */
 
 .containerCortes {
-    padding: 0 5% 10% 5%;
+    padding: 10px 5% 10% 5%;
+    color: $tertiaryColor;
+
+    h1{
+        font-size: 23px;
+        padding-bottom: 5px;
+    }
 
     p{
         text-align: center;
@@ -119,6 +159,7 @@ main {
 
 .containerUbicacion {
     text-align: center;
+    color: $tertiaryColor;
 
     nav{
         iframe{
@@ -134,6 +175,10 @@ main {
                 width: 100%;
             }
         }
+    }
+
+    h1{
+        font-size: 22px;
     }
 
     h2{
@@ -154,8 +199,10 @@ main {
 
 .containerSugerencias{
     text-align: center;
+    color: $tertiaryColor;
 
     h1{
+        font-size: 23px;
         padding-bottom: 20xp;
     }
 
@@ -197,7 +244,7 @@ main {
 footer{
     text-align: center;
     font-family: $fontPrimary;
-    background-color: $primaryColor;
+    background-color: #101010;
 
     nav{
         padding-bottom: 10px;
@@ -215,13 +262,22 @@ footer{
 
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: $tertiaryColor;
                 }
 
                 img{
                     width: 15%;
                 }
             }
+
+            .list-color:hover{
+                color: $secondaryColor;
+                transition: all 0.4s;
+            }
         }
+    }
+
+    p{
+        color: $tertiaryColor;
     }
 }

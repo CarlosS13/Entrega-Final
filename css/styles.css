@@ -7,36 +7,61 @@
 /* Mobile first 
    Index.html  */
 /* Header */
-nav ul {
+.navbar {
+  background-color: #2C2C2C;
+  margin-bottom: 1px;
+}
+.navbar div div ul {
   font-family: fantasy;
 }
-nav ul li a {
+.navbar div div ul li .list-color {
   text-align: center;
+  color: white;
+}
+.navbar div div ul li .list-color:hover {
+  color: #4bd0ee;
+  transition: all 0.4s;
 }
 
 /* Main */
 main {
   padding-top: 10px;
-  background-color: white;
+  background-color: #101010;
 }
 main h1 {
   font-size: x-large;
   text-align: center;
+  color: white;
+  font-family: fantasy;
 }
 main div img {
   width: 100%;
 }
+main .containerDivision {
+  display: flex;
+  justify-content: center;
+}
+main .containerDivision .divisionLine {
+  border-bottom: 1px solid white;
+  margin: 19px;
+  width: 30%;
+}
+main .containerDivision .flecha {
+  width: 10%;
+}
 main .containerText {
-  margin: 3% 10% 10% 10%;
+  padding: 3% 10% 10% 10%;
   text-align: center;
 }
 main .containerText p {
   margin-bottom: 0;
+  color: white;
 }
 
 /* agenda.html Main */
 .containerAgenda {
   text-align: center;
+  color: white;
 }
 .containerAgenda h1 {
   font-size: large;
@@ -64,6 +89,7 @@ main .containerText p {
 }
 .containerAgenda p {
   padding: 0% 10% 0% 10%;
+  margin-bottom: 0;
 }
 .containerAgenda .firstP {
   padding-top: 10%;
@@ -74,7 +100,12 @@ main .containerText p {
 
 /* Cortes.html */
 .containerCortes {
-  padding: 0 5% 10% 5%;
+  padding: 10px 5% 10% 5%;
+  color: white;
+}
+.containerCortes h1 {
+  font-size: 23px;
+  padding-bottom: 5px;
 }
 .containerCortes p {
   text-align: center;
@@ -93,6 +124,7 @@ main .containerText p {
 /* Ubicacion.html */
 .containerUbicacion {
   text-align: center;
+  color: white;
 }
 .containerUbicacion nav iframe {
   width: 90%;
@@ -103,6 +135,9 @@ main .containerText p {
 }
 .containerUbicacion nav nav img {
   width: 100%;
+}
+.containerUbicacion h1 {
+  font-size: 22px;
 }
 .containerUbicacion h2 {
   font-size: large;
@@ -119,8 +154,10 @@ main .containerText p {
 /* Sugerencias.html */
 .containerSugerencias {
   text-align: center;
+  color: white;
 }
 .containerSugerencias h1 {
+  font-size: 23px;
   padding-bottom: 20xp;
 }
 .containerSugerencias p {
@@ -156,7 +193,7 @@ main .containerText p {
 footer {
   text-align: center;
   font-family: fantasy;
-  background-color: white;
+  background-color: #101010;
 }
 footer nav {
   padding-bottom: 10px;
@@ -174,10 +211,17 @@ footer nav ul li {
 }
 footer nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 footer nav ul li img {
   width: 15%;
+}
+footer nav ul .list-color:hover {
+  color: #4bd0ee;
+  transition: all 0.4s;
+}
+footer p {
+  color: white;
 }
 
 /* Estilo de tablet */
@@ -186,8 +230,11 @@ footer nav ul li img {
     font-size: medium;
   }
   main h1 {
-    font-size: xx-large;
+    font-size: 28px;
     padding-bottom: 10px;
+  }
+  main .containerDivision .divisionLine {
+    margin: 40px;
   }
   main .containerText {
     font-size: large;
@@ -207,7 +254,7 @@ footer nav ul li img {
   }
   /* Agenda.html */
   .containerAgenda h1 {
-    font-size: xx-large;
+    font-size: 28px;
   }
   .containerAgenda iframe {
     height: 450px;
@@ -221,7 +268,17 @@ footer nav ul li img {
   .containerAgenda .lastP {
     padding-bottom: 6%;
   }
+  /* Cortes */
+  .containerCortes h1 {
+    font-size: 28px;
+  }
   /* Ubicacion.html */
+  .containerUbicacion h1 {
+    font-size: 28px;
+  }
+  .containerUbicacion h2 {
+    font-family: fantasy;
+  }
   .containerUbicacion .fotosUbicacion {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -229,6 +286,9 @@ footer nav ul li img {
     padding: 0 10px 30px 10px;
   }
   /* Sugerencias.html */
+  .containerSugerencias h1 {
+    font-size: 28px;
+  }
   .containerSugerencias form div {
     padding: 20px;
   }
@@ -251,13 +311,31 @@ footer nav ul li img {
     padding: 0 10% 0 10%;
   }
   .navbar div a img {
-    width: 250px;
+    width: 200px;
   }
   .navbar div ul li a {
     font-size: large;
   }
+  main {
+    padding: 30px 0 20px 0;
+  }
   main h1 {
-    font-size: 35px;
+    font-size: 28px;
+  }
+  main .containerImg {
+    background-image: url(../../img/fondo-container.jpg);
+    display: grid;
+    justify-content: center;
+  }
+  main .containerImg img {
+    box-shadow: -50px 0px 50px 0px rgba(0, 0, 0, 0.3), 50px 0px 50px 0px rgba(0, 0, 0, 0.3);
+  }
+  main .containerDivision .flecha {
+    width: 3%;
+    padding-top: 6px;
+  }
+  main .containerDivision .divisionLine {
+    margin: 27px;
   }
   footer {
     display: flex;
@@ -286,6 +364,9 @@ footer nav ul li img {
   .containerAgenda iframe {
     width: 70%;
   }
+  .containerAgenda .firstP {
+    padding-top: 50px;
+  }
   .containerAgenda div form input {
     width: 20%;
   }
@@ -293,6 +374,9 @@ footer nav ul li img {
     width: 10%;
   }
   /* Cortes.html */
+  .containerCortes {
+    padding-top: 30px;
+  }
   .containerCortes .containerEj {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -302,10 +386,10 @@ footer nav ul li img {
   }
   /* Ubicacion.html */
   .containerUbicacion {
-    padding-top: 0;
+    padding-top: 30px;
   }
   .containerUbicacion h1 {
-    font-size: x-large;
+    font-size: 28px;
     padding-bottom: 30px;
   }
   .containerUbicacion h2 {
@@ -343,8 +427,11 @@ footer nav ul li img {
     grid-column-end: -1;
   }
   /* Sugerencias.html */
+  .containerSugerencias {
+    padding-bottom: 130px;
+  }
   .containerSugerencias p {
-    padding: 0 300px 0 300px;
+    padding: 25px 300px 40px 300px;
   }
   .containerSugerencias form {
     display: flex;
