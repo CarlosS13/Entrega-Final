@@ -323,7 +323,7 @@ footer p {
     font-size: 28px;
   }
   main .containerImg {
-    background-image: url(../../img/fondo-container.jpg);
+    background-image: url(../img/fondo-container.jpg);
     display: grid;
     justify-content: center;
   }
